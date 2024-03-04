@@ -24,7 +24,7 @@ class VehicleList
      */
     public static function setVehiclesList(): void
     {
-        $vehicles = json_decode(file_get_contents(__DIR__ . "/../vehicles.json"), true);
+        $vehicles = json_decode(file_get_contents(__DIR__ . "/../../vehicles.json"), true);
         foreach ($vehicles as $key => $vehicle) {
             self::$vehiclesList[] = new Vehicle($vehicle['name'], $vehicle['maxSpeed'], $vehicle['unit'], $key + 1);
         }
