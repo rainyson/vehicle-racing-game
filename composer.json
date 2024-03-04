@@ -1,0 +1,21 @@
+{
+    "name": "rainyson/vehicle-racing-game",
+    "description": "PHP Command-line Game named Vehicle Racing",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rainyson\\VehicleRacingGame\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Babak Shokouhi Pour",
+            "email": "rainyson@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "^6.4"
+    }
+}
